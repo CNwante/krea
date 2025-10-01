@@ -16,7 +16,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="p-2 rounded-lg border bg-gray-200 dark:bg-gray-800 hover:scale-110 transition"
+      className="p-1.5 rounded-lg bg-muted hover:scale-110 transition cursor-pointer"
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.div
