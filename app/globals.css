@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand / Primary actions */
+  --color-primary: #2563eb;       /* Bright blue for CTA buttons and highlights */
+
+  /* Neutral / Surfaces */
+  --color-background: #ffffff;    /* Main background */
+  --color-surface: #ffffff;       /* Card backgrounds, slightly off-white */
+  --color-muted: #f5f5f5;         /* Borders, separators, subtle lines */
+  --color-content: #111827;       /* Default text (near-black) */
+  --color-accent: #6b7280;        /* Secondary text (muted gray) */
+
+  /* Aliases for semantic clarity */
+  --color-tag-new: var(--color-primary);  /* "New" badge */
+  --color-button-bg: var(--color-primary); /* Buttons like Sign Up */
+  --color-unmuted: #ffffff;
+  --color-gray-bg: #f5f5f5;
+  --color-button-text: #ffffff;           /* Text on primary buttons */
+}
+
+.dark {
+  /* Brand / Primary actions */
+  --color-primary: #006eff;        /* Brighter blue for contrast in dark mode */
+
+  /* Neutral / Surfaces */
+  --color-background: #101010;     /* Very dark gray background #*/
+  --color-surface: #646464;        /* Card surfaces in dark mode */
+  --color-muted: #202020;          /* Subtle borders and separators */
+  --color-unmuted: #202020;
+  --color-gray-bg: #4a5565;
+  --color-content: #f9fafb;        /* Text (off-white for readability) */
+  --color-accent: #73716d;         /* Secondary text (grayish) */
+
+  /* Aliases for semantic clarity */
+  --color-tag-new: var(--color-primary);
+  --color-button-bg: var(--color-primary);
+  --color-button-text: #ffffff;
+}
