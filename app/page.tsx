@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import HeroCarousel from "@/components/HeroCarousel";
+import FeatureSection from "@/components/FeatureSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     >
       <Header />
       <HeroCarousel />
+      <FeatureSection />
       <Navbar variant="mobile" />
     </motion.div>
   );
