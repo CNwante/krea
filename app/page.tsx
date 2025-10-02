@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import HeroCarousel from "@/components/HeroCarousel";
 import FeatureSection from "@/components/FeatureSection";
+import { Gallery } from "@/components/Gallery";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <HeroCarousel />
       <FeatureSection />
+      <Gallery />
       <Navbar variant="mobile" />
     </motion.div>
   );
