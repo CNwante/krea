@@ -1,13 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import blackLogo from "@/assets/images/black-logo.webp";
+import whiteLogo from "@/assets/images/white-logo.webp";
 
 export const Logo = () => {
   return (
     <div>
       {/* Dark logo (shown in light mode) */}
       <Image
-        src={"/images/black-logo.webp"}
+        src={blackLogo}
         alt="Krea dark logo"
         width={22}
         height={29}
@@ -16,7 +18,7 @@ export const Logo = () => {
       />
       {/* Light logo (shown in dark mode) */}
       <Image
-        src={"/images/white-logo.webp"}
+        src={whiteLogo}
         alt="Krea light logo"
         width={22}
         height={29}
