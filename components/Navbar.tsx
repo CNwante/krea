@@ -66,19 +66,29 @@ const Navbar = ({ variant = "mobile", className }: NavbarProps) => {
               href={href}
               className="flex flex-col items-center justify-center flex-1"
             >
-              <Icon
-                className={clsx(
-                  "text-2xl mb-0.5",
-                  isActive ? "text-black" : "text-[--color-content]"
-                )}
-              />
               <span
                 className={clsx(
-                  "text-xs",
-                  isActive ? "text-black font-medium" : "text-[--color-content]"
+                  isActive
+                    ? "bg-white px-1.5 rounded-xl"
+                    : "text-[--color-content]"
                 )}
               >
-                {label}
+                <Icon
+                  className={clsx(
+                    "text-2xl mb-0.5",
+                    isActive ? "text-black" : "text-[--color-content]"
+                  )}
+                />
+                <span
+                  className={clsx(
+                    "text-xs",
+                    isActive
+                      ? "text-black font-medium"
+                      : "text-[--color-content]"
+                  )}
+                >
+                  {label}
+                </span>
               </span>
             </Link>
           );
