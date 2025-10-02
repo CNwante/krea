@@ -67,15 +67,15 @@ const Navbar = ({ variant = "mobile", className }: NavbarProps) => {
               className="flex flex-col items-center justify-center flex-1"
             >
               <span
-                className={clsx(
+                className={clsx("flex items-center gap-1 mb-2",
                   isActive
-                    ? "bg-white px-1.5 rounded-xl"
+                    ? "bg-white p-1 rounded-lg"
                     : "text-[--color-content]"
                 )}
               >
                 <Icon
                   className={clsx(
-                    "text-2xl mb-0.5",
+                    "text-2xl",
                     isActive ? "text-black" : "text-[--color-content]"
                   )}
                 />
@@ -83,8 +83,8 @@ const Navbar = ({ variant = "mobile", className }: NavbarProps) => {
                   className={clsx(
                     "text-xs",
                     isActive
-                      ? "text-black font-medium"
-                      : "text-[--color-content]"
+                      ? "text-black font-bold"
+                      : "text-[--color-content] hidden"
                   )}
                 >
                   {label}
