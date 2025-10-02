@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import HeroCarousel from "@/components/HeroCarousel";
 import FeatureSection from "@/components/FeatureSection";
 import { Gallery } from "@/components/Gallery";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroCarousel />
       <FeatureSection />
       <Gallery />
+      <Footer />
       <Navbar variant="mobile" />
     </motion.div>
   );
