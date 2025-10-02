@@ -17,7 +17,6 @@ export default function Home() {
       <Header />
       <HeroCarousel />
       <FeatureSection />
-      <Gallery />
       <Navbar variant="mobile" />
     </motion.div>
   );
